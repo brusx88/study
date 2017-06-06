@@ -1,0 +1,55 @@
+//index
+@import 'index.scss';
+
+//custom
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #fff;
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: "PTSans";
+    font-size: 100%;
+    
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+    
+}
+
+button {
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
