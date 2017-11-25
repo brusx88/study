@@ -4,6 +4,35 @@ html(lang="ru-RU")
 		meta(charset='utf-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		link(rel='stylesheet', type='text/css', href='../css/style.css')
+		script(src='../js/index.js' defer)
 		title Frontend
 	body
-		h1 Сборка Frontend
+		.wrapper
+			.front
+				h1.title Сборка Frontend
+				ol.list
+					li.list__item git clone
+					li.list__item sudo npm install --global gulp-cli
+					li.list__item npm i
+					li.list__item bower i
+			#page-wrapper
+				h1 Datalist Element Demo
+				label(for='default') Pick a programming language
+				input#default(type='text', list='languages', placeholder='e.g. JavaScript')
+				datalist#languages
+					option(value='HTML')
+					option(value='CSS')
+					option(value='JavaScript')
+					option(value='Java')
+					option(value='Ruby')
+					option(value='PHP')
+					option(value='Go')
+					option(value='Erlang')
+					option(value='Python')
+					option(value='C')
+					option(value='C#')
+					option(value='C++')
+				label(for='ajax') Pick an HTML Element (options loaded using AJAX)
+				input#ajax(type='text', list='json-datalist', placeholder='e.g. datalist')
+				datalist#json-datalist
+
