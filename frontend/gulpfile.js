@@ -92,8 +92,7 @@ gulp.task('image:build', function() {
 
 //копируем шрифты
 gulp.task('fonts:build', function() {
-    gulp.src(path.src.fonts)
-        .pipe(gulp.dest(path.build.fonts))
+    gulp.src(path.src.fonts).pipe(gulp.dest(path.build.fonts))
 });
 
 //общий build

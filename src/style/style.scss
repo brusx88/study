@@ -1,14 +1,13 @@
 //index
 @import 'index.scss';
-
-//custom
 body,
 html {
     padding: 0;
     margin: 0;
     height: 100%;
-    background: linear-gradient(45deg, #EECFBA, #C5DDE8); 
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
+
 *,
 *:after,
 *:before {
@@ -16,15 +15,13 @@ html {
     padding: 0;
     margin: 0;
 }
+
 html {
     font-family: "PTSans";
     font-size: 100%;
-    
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    
 }
-
 
 a {
     &:hover,
@@ -33,7 +30,6 @@ a {
         text-decoration: none;
         outline: none;
     }
-    
 }
 
 button {
@@ -41,11 +37,9 @@ button {
     &:focus {
         outline: none;
     }
-    
 }
 
 img {
     max-width: 100%;
     height: auto;
-    
 }
