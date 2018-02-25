@@ -9,7 +9,6 @@ var
     sass = require('gulp-sass'), // работа с препроцессором SCSS
     csso = require('gulp-csso'), // Минификация CSS-файлов
     imagemin = require('gulp-imagemin'), // сжимаем изображения
-    pngquant = require('imagemin-pngquant'), // дополнения к предыдущему плагину, для работы с PNG
     rimraf = require('rimraf'), //rm -rf для ноды
     browserSync = require("browser-sync"), // локальный dev сервер с livereload, так же с его помощью мы сможем сделать тунель на наш localhost
     reload = browserSync.reload;
@@ -85,7 +84,6 @@ gulp.task('image:build', function() {
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
-            use: [pngquant()],
             interlaced: true
         }))
         .pipe(gulp.dest(path.build.img))
