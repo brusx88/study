@@ -1,0 +1,19 @@
+.footer  {
+    display: flex;
+    background: rgba(2, 2, 2, 0.904);
+    margin-top: rem(-50px);
+    height: rem(58px);
+    padding-top: rem(8px);
+}
+
+.footer__row-adress {
+    font-family: 'Ubuntu';
+    font-size: rem(14px);
+    color: #ffffff;
+}
+
+.footer__row-tel {
+    font-family: 'Ubuntu';
+    color: #e45028;
+    font-weight: 500;
+}

@@ -1,0 +1,149 @@
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgba(255,179,102,1);
+    background: -moz-linear-gradient(top, rgba(255,179,102,1) 0%, rgba(255,174,92,1) 7%, rgba(255,143,31,1) 51%, rgba(255,143,31,1) 86%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,179,102,1)), color-stop(7%, rgba(255,174,92,1)), color-stop(51%, rgba(255,143,31,1)), color-stop(86%, rgba(255,143,31,1)));
+    background: -webkit-linear-gradient(top, rgba(255,179,102,1) 0%, rgba(255,174,92,1) 7%, rgba(255,143,31,1) 51%, rgba(255,143,31,1) 86%);
+    background: -o-linear-gradient(top, rgba(255,179,102,1) 0%, rgba(255,174,92,1) 7%, rgba(255,143,31,1) 51%, rgba(255,143,31,1) 86%);
+    background: -ms-linear-gradient(top, rgba(255,179,102,1) 0%, rgba(255,174,92,1) 7%, rgba(255,143,31,1) 51%, rgba(255,143,31,1) 86%);
+    background: linear-gradient(to bottom, rgba(255,179,102,1) 0%, rgba(255,174,92,1) 7%, rgba(255,143,31,1) 51%, rgba(255,143,31,1) 86%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb366', endColorstr='#ff8f1f', GradientType=0 );
+}
+
+.slider__container {
+    width: 70%;
+    position: relative;
+    height: rem(550px);
+    overflow: hidden;
+}
+
+.slider__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.slider__item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__img {
+    width: 40%;
+    height: rem(350px);
+}
+
+.slider__img-pic  {
+    width: 100%;
+    height: 100%;
+}
+
+.slider__composition {
+    position: absolute;
+    left: 2%
+}
+
+.slider__kkal {
+    position: absolute;
+    bottom: 0;
+    left: 2%
+}
+
+.slider__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2px 2px ;
+}
+
+
+//text content
+.slider__order-wrap {
+    margin-right: rem(10px);
+}
+
+.slider__order-price {
+    display: flex;
+    align-items: center;
+    
+}
+
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: normal;
+    width: 60%;
+}
+
+.slider__content-title {
+    font-family: 'Gagalin';
+    font-size: rem(72px);
+    color: #ffffff;
+    line-height: .8;
+    // max-width: 60%;
+    margin-bottom: rem(30px);
+    
+}
+
+.slider__content-subtitle {
+    font-family: 'Ubuntu';
+    font-size: rem(14px);
+    font-weight: 300;
+    color: #ffffff;
+    // width: 100%;
+    margin-bottom: rem(25px);
+}
+
+.slider__order-price__num {
+    font-family: 'Gagalin';
+    font-size: rem(60px);
+    color: #e35028;
+}
+
+.slider__order-price__rub {
+    font-family: 'Gagalin';
+    font-size: rem(30px);
+    color: #e35028;
+}
+
+//arrows
+
+.arrow__left {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.arrow__right {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+
+}
+
+.arrow__link {
+    display: block;
+    background: url('../../img/burgers/left.png') center center / cover no-repeat;
+    width: rem(25px);
+    height: rem(35px);
+}
+.arrow__link--right {
+        display: block;
+        background: url('../../img/burgers/right.png') center center / cover no-repeat;
+        width: rem(25px);
+        height: rem(35px);
+    }
+
+

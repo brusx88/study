@@ -1,0 +1,95 @@
+.menu-section {
+    display: flex;
+    background: url('../../../img/menu/background.jpg') center center / cover no-repeat;
+    position: relative;
+}
+
+.menu__acco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.menu__list {
+    display: flex;
+    height: 100%;
+}
+
+.menu__item {
+    display: flex;
+    height: 100%;
+
+    &--active {
+        .menu__acco-content {
+            width: rem(500px);
+            padding: 50px 10px 10px 10px;
+        }
+    }
+}
+
+.menu__acco__trigger {
+    position: relative;
+    background: url('../../../img/menu/fornormal.jpg') center center / cover no-repeat;
+    width: rem(80px);
+    height: 100%;
+    
+    &--back2 {
+        background: url('../../../img/menu/foreblan.jpg') center center / cover no-repeat;
+    }
+
+    &--back3 {
+        background: url('../../../img/menu/forgirl.jpg') center center / cover no-repeat;
+    }
+
+    &:after {
+        display: block;
+        background: rgba(56, 60, 61, 0.9);
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+}
+
+.menu__acco-content {
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    color: #ffffff;
+
+    &:after {
+        display: block;
+        background: rgba(106, 108, 109, 0.9);
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+}
+
+.menu__acco__trigger-text {
+    position: absolute;
+    font-size: rem(40px);
+    font-family: 'Lifehack';
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    bottom: 5%;
+    z-index: 1;
+}
+
+
+
+@keyframes acco-text {
+    10% {opacity: 0;}
+    to {opacity: 1;}
+}

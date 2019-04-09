@@ -5,7 +5,7 @@ var
     watch = require('gulp-watch'), // следим за изменениями файлов
     pug = require('gulp-pug'), //шаблонизатор pug
     prefixer = require('gulp-autoprefixer'), // автопрефиксы
-    uglify = require('gulp-uglify'), // минификация js
+    // uglify = require('gulp-uglify'), // минификация js
     sass = require('gulp-sass'), // работа с препроцессором SCSS
     csso = require('gulp-csso'), // Минификация CSS-файлов
     imagemin = require('gulp-imagemin'), // сжимаем изображения
@@ -46,7 +46,7 @@ var config = {
     },
     tunnel: true,
     host: 'localhost',
-    port: 8000,
+    port: 5000,
     logPrefix: "Frontend"
 };
 
@@ -61,7 +61,7 @@ gulp.task('html:build', function() {
 //обрабатываем js
 gulp.task('js:build', function() {
     gulp.src(path.src.js)
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({ stream: true }));
 });

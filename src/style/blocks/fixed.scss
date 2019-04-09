@@ -1,0 +1,41 @@
+.fixed-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+}
+
+.fixed-menu__item {
+    margin-bottom: rem(20px);
+    position: relative;
+    &--active {
+        .fixed-menu__link {
+            &:after {
+                display: block;
+                position: absolute;
+                content: "";
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                top: -4px;
+                left: -4px;
+            }
+        }
+    }
+}
+
+
+
+.fixed-menu__link {
+
+    &:before {
+        display: block;
+        content: "";
+        background: #fff;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+}

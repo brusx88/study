@@ -1,0 +1,106 @@
+.team {
+    display: flex;
+    background: url('../../../img/our_team/background.jpg') center center / cover no-repeat;
+    justify-content: flex-end;
+}
+
+.team__wrap {
+    display: flex;
+    background: rgba(46, 53, 56, 0.9);
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 80x 10px 20px 10px;
+    justify-content: center;
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.hero__wrap-top__margin {
+    margin-bottom: rem(46px);
+}
+
+.acco__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.acco__item {
+    margin-bottom: rem(20px);
+}
+
+.acco__item__wrap {
+    display: flex;
+    flex-direction: row;
+    height: 0;
+    overflow: hidden;
+    padding-top: rem(17px);
+    
+
+    @include tablets {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.acco__item__wrap--active {
+    .acco__team__link {
+        color :#f9b43b;
+    }
+    .acco__item__wrap {
+        height: auto;
+        
+    }
+}
+
+.acco__team__link {
+    font-family: 'Gagalin';
+    color: #ffffff;
+    font-size: rem(13.92px);
+    
+    &:before {
+        display: inline-flex;
+        content: "";
+        border: 5px solid transparent; 
+        border-top: 7px solid #f9b43b; 
+        margin-right: rem(5px);
+    }
+    
+}
+
+.acco__item__img {
+    margin-right: rem(21px);
+    width: rem(100px);
+    height: rem(100px);
+   
+    @include tablets {
+        margin-bottom: 22px;
+    }
+}
+
+.acco__item__img-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.acco__item__desc {
+    
+    max-width: rem(208px);
+}
+
+.acco__item__desc-title {
+    font-family: 'Gagalin';
+    color:#ffffff;
+    font-size: rem(13.92px);
+    font-weight: 400;
+}
+
+.acco__item__desc-subtitle {
+    font-family:'Ubuntu';
+    color:#ffffff;
+    font-size: rem(14px);
+    font-weight: 300;
+}
